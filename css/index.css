@@ -12,11 +12,61 @@ section {
 }
 
 nav {
-  padding: 50px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
 }
 
+nav h2 {
+  color: red;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.heroLeft,
+.heroRight {
+  padding: 10px;
+  width: 50%;
+}
+
+.heroRight {
+  align-items: flex-start;
+}
+
+.heroLeft {
+  display: flex;
+  align-items: center;
+}
+
+.subHeroContent {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+
+.subHero {
+  color: white;
+}
+#verticalText {
+  color: white;
+  transform: rotate(90deg);
+}
+
+#theHero {
+  color: white;
+  font-size: 44px;
+  margin: 0;
+}
+#redHero {
+  color: red;
+  font-size: 194px;
+  margin: 0;
+  font-weight: 800;
+}
 .search {
   cursor: pointer;
 }
@@ -157,12 +207,17 @@ nav {
   border: none;
   border-radius: 10px;
 }
-.icons {
+.icons,
+.icons_top {
   /* margin: 100px; */
   padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+}
+
+.icons_mobile{
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -216,5 +271,38 @@ nav {
     display: flex;
     justify-content: space-between;
   }
-}
+  .icons_top {
+    display: none;
+  }
 
+  .heroContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .heroLeft,
+  .heroRight {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 250px;
+  }
+  .heroRight{
+    margin-left: 20px;
+  }
+
+  .heroLeft {
+    display: flex;
+    justify-content: center;
+  }
+
+  #redHero {
+    color: red;
+    font-size: 100px;
+    margin: 0;
+    font-weight: 800;
+  }
+  #verticalText {
+    transform: rotate(0deg);
+    text-align: center;
+  }
+}
