@@ -1,0 +1,220 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat";
+  background-color: #000;
+  opacity: 87%;
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+}
+
+nav {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../images/bghero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tours {
+  height: 100vh;
+  background-image: url("../images//wave.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.toursNav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore {
+  background-color: white;
+  padding: 20px 50px;
+  border-radius: 50px;
+}
+
+.exBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+  letter-spacing: 5px;
+}
+
+#toursHeading {
+  font-size: 32px;
+  color: white;
+}
+
+.toursContent {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#centerText {
+  margin-top: 130px;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+
+#parisImg,
+#budaImg {
+  height: 328px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.textParis {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.textBuda {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 20px;
+  text-align: end;
+}
+#parisText,
+#budaText {
+  color: white;
+  font-size: 14px;
+}
+
+#parisLoc,
+#budaLoc {
+  color: white;
+  font-size: 18px;
+}
+
+.leftImg,
+.rightImg {
+  display: flex;
+  flex-direction: row;
+}
+
+#bookbtn {
+  background-color: #000;
+  color: red;
+  padding: 10px 5px;
+  font-size: 18px;
+  border: 0.2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+#bookbtn:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.contact {
+  background-color: red;
+  height: 50vh;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contactMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contactHeading {
+  color: white;
+}
+
+#sendMsg {
+  background-color: #000;
+  color: white;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 10px;
+}
+.icons {
+  /* margin: 100px; */
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 100vh;
+    background-image: url("../images/bghero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .toursNav {
+    padding: 0 10px;
+  }
+
+  .explore {
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  .tours {
+    height: auto;
+  }
+  #centerText {
+    margin: auto;
+    padding: 20px;
+  }
+  .toursContent {
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #parisImg,
+  #budaImg {
+    height: 258px;
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-between;
+  }
+  .icons {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
